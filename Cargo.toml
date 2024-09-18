@@ -1,3 +1,5 @@
+workspace = { members = [ "bye","hello"] }
+
 [package]
 name = "rust-crate-app"
 version = "0.1.0"
@@ -6,9 +8,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-say-hello-jan = { version = "=0.4.0", features = ["bye", "all"] }
-bye={path = "bye"}
+say-hello-jan = { version = "=0.5.0", features = ["bye", "all","hello"] }
 hello={path = "hello"}
+bye = {path = "bye"}
 
 [dev-dependencies]
 uuid = { version = "=1.8.0", features = ["v4"] }

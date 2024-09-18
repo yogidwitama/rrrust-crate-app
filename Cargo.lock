@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "bye"
+version = "0.1.0"
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -20,6 +24,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "hello"
+version = "0.1.0"
+
+[[package]]
 name = "libc"
 version = "0.2.158"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -29,15 +37,17 @@ checksum = "d8adc4bb1803a324070e64a98ae98f38934d91957a99cfb3a43dcbc01bc56439"
 name = "rust-crate-app"
 version = "0.1.0"
 dependencies = [
+ "bye",
+ "hello",
  "say-hello-jan",
  "uuid",
 ]
 
 [[package]]
 name = "say-hello-jan"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4bd7e7e3231856ab1cbf349e8da39c6f44deed08c2f4910faded708ddbfe6fa8"
+checksum = "0d0ea4a2fd670e0078d7c34b933e73f7b0060a6261bc1905004fa699ee6a3611"
 
 [[package]]
 name = "uuid"
